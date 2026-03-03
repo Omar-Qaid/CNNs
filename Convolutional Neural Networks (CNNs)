@@ -1,0 +1,19 @@
+Convolutional Neural Networks (CNNs)
+Convolutional Neural Networks (CNNs) are a class of deep learning models primarily used for analyzing visual imagery. They are particularly effective for tasks like image classification, object detection, and image segmentation.
+
+Key Components of a CNN:
+
+Convolutional Layer: This is the core building block. It applies a set of learnable filters (kernels) to the input image, performing a convolution operation. Each filter detects specific features like edges, textures, or patterns.
+
+Activation Function (e.g., ReLU): Applied after the convolutional layer, it introduces non-linearity into the model, allowing it to learn more complex patterns.
+
+Pooling Layer (e.g., Max Pooling): Reduces the spatial dimensions of the feature maps, which helps to decrease computational cost, control overfitting, and make the model more robust to variations in position of features.
+
+Fully Connected Layer: After several convolutional and pooling layers, the high-level features extracted by these layers are flattened and fed into one or more fully connected (dense) layers, similar to a traditional neural network. These layers are responsible for classification based on the learned features.
+
+Output Layer: The final fully connected layer with an activation function (e.g., softmax for multi-class classification) that produces the final prediction.
+
+How they work (Simplified):
+
+Imagine you're trying to teach a computer to recognize a cat. A traditional neural network might struggle because a cat's image can vary greatly in pixel values based on lighting, angle, and position. A CNN, however, uses its filters to detect specific features (like whiskers, ears, or eyes) regardless of where they appear in the image. These detected features are then combined by deeper layers to form more complex patterns, eventually leading to the recognition of a "cat."
+
